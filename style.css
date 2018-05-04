@@ -1,0 +1,31 @@
+#slider1 {
+	background: url(http://bamaminigolf.com/wp-content/uploads/2018/03/wallpaper-design-6-wallpapercanyon-home-avec-wallpaper-design-hd-idees-et-wallpaper-design-6-avec-1920x1080px.jpg) center 0 no-repeat fixed;
+	
+	height: 800px;
+	padding-top: 200px;
+}
+#slider2 {
+	background: url(http://isname2.esy.es/images/htmlcss.jpg) center 0 fixed;
+	height: 800px;
+	padding-top: 450px;
+}
+#slider3 {
+	background: url(https://cdn-images-1.medium.com/max/2000/1*BZhgq62f6X8eSELohvXpvQ.png) center 0 fixed;
+	height: 800px;
+	padding-top: 100px;
+}
+#slider4 {
+	background: url(https://www.devstreak.com/wp-content/uploads/2016/02/Wordpress1020i31432.jpg) center 0 fixed;
+	height: 800px;
+	padding-top: 100px;
+}
+#slider1, #slider2, #slider3, #slider4 {
+	background-size: 100%;
+}
+
+h1 {
+	color: rgba(40, 158, 215, .5);
+}
+.h5first {
+	color: rgba(555, 00, 80, .8); 
+}
