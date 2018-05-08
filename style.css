@@ -1,46 +1,97 @@
-
-#navigation {
+/*barre de navigation*/
+.header {
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
   background-color: black;
+  position: fixed;
+  z-index: 3;
 }
-#navigation li {
+
+.menu li{
   display: inline;
-  margin-right: 10px ;
+  margin-right: 15px;
 }
 
-
+/*slider*/
 #slider1 {
-	background: url(http://bamaminigolf.com/wp-content/uploads/2018/03/wallpaper-design-6-wallpapercanyon-home-avec-wallpaper-design-hd-idees-et-wallpaper-design-6-avec-1920x1080px.jpg) center 0 no-repeat fixed;
-	
-	height: 800px;
-	padding-top: 200px;
+	background: url(http://bamaminigolf.com/wp-content/uploads/2018/03/wallpaper-design-6-wallpapercanyon-home-avec-wallpaper-design-hd-idees-et-wallpaper-design-6-avec-1920x1080px.jpg);
+	background-attachment: fixed;
+	position: relative;
+  padding-top: 8%;
 }
 #slider2 {
-	background: url(http://isname2.esy.es/images/htmlcss.jpg) center 0 fixed;
-	height: 800px;
-	padding-top: 450px;
+	background: url(http://isname2.esy.es/images/htmlcss.jpg);
+	background-attachment: fixed;
+	position: relative;
+  padding-top: 8%;
 }
 #slider3 {
-	background: url(https://cdn-images-1.medium.com/max/2000/1*BZhgq62f6X8eSELohvXpvQ.png) center 0 fixed;
-	height: 800px;
-	padding-top: 100px;
+	background: url(https://cdn-images-1.medium.com/max/2000/1*BZhgq62f6X8eSELohvXpvQ.png);
+	background-attachment: fixed;
+	position: relative;
 }
 #slider4 {
-	background: url(https://www.devstreak.com/wp-content/uploads/2016/02/Wordpress1020i31432.jpg) center 0 fixed;
-	height: 800px;
-	padding-top: 100px;
+	background: url(https://www.devstreak.com/wp-content/uploads/2016/02/Wordpress1020i31432.jpg);
+	background-attachment: fixed;
+	position: relative;
 }
 #slider1, #slider2, #slider3, #slider4 {
 	background-size: 100%;
 }
 
+@media only screen and (min-width: 960px) {
+   .row.slide{
+       height: 800px;
+   }
+}
+@media only screen and (max-width: 959px) {
+   .row.slide{
+       height: 300px;
+   }
+}
+@media only screen and (max-width: 500px) {
+   .row.slide{
+       height: 150px;
+   }
+}
+
+
+/*texte*/
 h1 {
 	color: rgba(40, 158, 215, .5);
 }
 .h5first {
 	color: rgba(555, 00, 80, .8); 
+}
+@media only screen and (max-width: 959px) {
+   body {
+       font-size: small;
+   }
+   h1 {
+    font-size: medium;
+   }
+   h5 {
+    font-size: small;
+   }
+}
+@media only screen and (max-width: 500px) {
+   body{
+       font-size: x-small;
+   }
+   h1 {
+    font-size: small;
+   }
+   h5 {
+    font-size: x-small;
+   }
+}
+
+/*footer*/
+
+.footer {
+  background-color: grey;
+  
 }
