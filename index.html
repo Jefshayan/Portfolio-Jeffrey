@@ -1,73 +1,11 @@
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>PorteFolio</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-		<script src='script.js' type='text/javascript'></script>
-		<script type="text/javascript" src="https://github.com/IanLunn/jQuery-Parallax.git"></script>
-	</head>
-	<body>
-		<div class= "header">
-			<nav>
-			  <ul class="menu">
-                <li><a href="#slider1" title="acceuil">Home</a></li>
-                <li><a href="#slider2" title="HTML&CSS">HTML & CSS</a></li>
-                <li><a href="#slider3" title="JavaScript">JavaScript</a></li>
-                <li><a href="#slider4" title="WordPress">WordPress</a></li>
-                <li><a href="#slider5" title="Contact">Contact</a></li>
-              </ul>
-			</nav>
-		</div>
-		    <div id="slider1" class="row slide">
-			    <div class="col-12 slide_inside">
-				    <h1 align="center">BONJOUR !<br></h1>
-				    <br>
-				    <br>
-				    <br>
-				    <h5 class="h5first" align="center">Je suis Jeffrey - Candidat Simplon.co.<br>Je suis motivé et déterminer à suivre cette formation.<br>Laissez moi vous en dire plus.</h5>
-			    </div>
-		    </div>
-		<div id="slider2" class="row slide">
-			<div class="col-12 slide_inside">
-				<img src="http://isname2.esy.es/images/htmlcss.jpg" class="img-fluid html" alt="img htlm & css">
-				<h5 align="center">Les deux premiers langages que j'ai appris<br>HTML & CSS<br>n'auront bientôt plus de secrets pour moi</h5>
-			</div>
-		</div>
-		<div id="slider3" class="row slide">
-			<div class="col-12 slide_inside">
-				<img src="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/js1.png" class="img-fluid js" align="right" alt="img javascript">
-			    <h5 class="h5js" align="center">Le JavaScript, ce langage au multiple possibilité est celui vers lequel je compte me spécialiser</h5>
-			</div>
-		</div>
-		<div id="slider4" class="row slide">
-			<div class="col-12 slide_inside">
-				<h5 aligne="left">J'apprend de nouvelles choses à chaque fois que j'utilise WordPress<br>c'est d'ailleur comme cela que j'ai créer mon premier site.</h5>
-			</div>
-		</div>
-	
-		<div class="container-fluid footer d-flex">
-			
-				<div class="card border-info mb-3" style="width: 18rem;">
-                  <img class="card-img-top center img-fluid" src="https://media.licdn.com/dms/image/C5103AQGaz-M4jVKRtA/profile-displayphoto-shrink_200_200/0?e=1531353600&v=beta&t=SV4PLLTCk4QronQAVOSK-PzruYdPFnK2BQEoVcywbjI" alt="Photo de jeff">
-                    <div class="card-body">
-                       <h5 class="card-title">Jeffrey</h5>
-                       <p class="card-text">N'ésitez pas à me contacter.</p>
-					   <a href="https://www.linkedin.com/in/jeffrey-eschylle-54ab5b145/" target="blank"><i class="fab fa-linkedin"></i></a><br>
-                         <div class="card-footer border-info">
-					   <a href="mailto:eschylle.jeffrey@gmail.com" class="btn btn-primary">Contacter Jeff</a>
-						 </div>
-				    </div>
-                </div>
-			
-		</div>
-	
-	  <script type="text/babel" src="script.js"></script>
-	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	</body>
-</html>
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
